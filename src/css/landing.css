@@ -1,0 +1,612 @@
+.heroWrap{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+.hero{
+ width: 100vw;
+ height: 60vh;
+}
+
+.welcome{
+    width: 100vw;
+    height: fit-content;
+    padding: 10vh 0;
+    background: var(--grey-color);
+    
+}
+.wlcomPlacer{
+    width: 90%;
+    margin:  0 auto;
+
+}
+.wlcmIntro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.wlcIntroLeft{
+    width: 50%;
+    height: fit-content;
+}
+.wlcIntroRight{
+    width: 50%;
+    height: fit-content;
+}
+.wlcIntroRight p{
+    text-align: end;
+}
+
+.wlcIntroLeft h2{
+ color: black;
+}
+.wlcIntroLeft span{
+    font-family: RobotoRegular;
+    font-weight: 100;
+    font-style: italic;
+}
+.wlcmBoxed{
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    height: 700px;
+    gap: 20px;
+
+
+}
+.wlcmBox{
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+            box-shadow:  15px 15px 10px rgba(0, 0, 0, 0.2);
+
+    background: aliceblue;
+}
+.wlcmBox1{
+    display: flex;
+    flex-direction: column;
+
+    grid-area: 1/1/2/2;
+}
+.wlcmBox2{
+    grid-area: 1/2/2/3;
+}
+.wlcmBox3{
+    grid-area: 2/1/3/3;
+
+}
+.wlmBoxCont{
+    width: 90%;
+    height: 80%;
+}
+.wlmBoxContL{
+      width: 95%;
+    height: 80%;
+}
+.wlmBoxCont p{
+    margin: 20px 0;
+}
+.wlmBoxCont h3 span{
+  font-family: RobotoRegular;
+  font-weight: 100;
+
+}
+.wlmBoxContL p{
+    margin: 20px 0;
+}
+.wlmBoxContL h3 span{
+  font-family: RobotoRegular;
+  font-weight: 100;
+
+}
+.myApproach{
+    width: 100vw;
+    height: fit-content;
+    padding: 10vh 0;
+}
+.myapproachPlc{
+    width: 90%;
+    margin: 0 auto;
+}
+.appTtile{
+    width: 100%;
+    text-align: center;
+}
+.appTtile h2 span{
+    font-weight: 100;
+    font-family: RobotoRegular;
+}
+.appBox{
+    width: 80%;
+    display: flex;
+    padding: 5% 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin:  0 auto;
+    margin-top: 50px;
+        box-shadow:  15px 15px 30px rgba(0, 0, 0, 0.2);
+    background: rgb(255, 255, 255);
+
+    height: fit-content;
+    
+}
+.appCont{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.appCont p{
+    margin-bottom: 15px;
+    text-align: start !important;
+}
+.appCont p span{
+    font-family: handwr;
+    font-size: 1.7rem !important;
+}
+.appCont button{
+    margin:  20px auto 0 auto ;
+}
+.whymediation{
+    width: 100%;
+    height: fit-content;
+    padding: 10vh 0;
+}
+.whymedPlc{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    margin:  0 auto;
+    flex-direction: row;
+
+}
+.whyMedLeft{
+    width: 40%;
+    height: fit-content;
+}
+.whyMedLeft button{
+    margin-top: 30px;
+}
+.whyMedLeft h2 span{
+    font-style: italic;
+    font-family: RobotoRegular;
+    font-weight: 100;
+}
+.whyMedRight{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.whyMedBoxed {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.wmb {
+    cursor: pointer;
+  background: #f8f9fa;
+  height: 305px;
+  width:300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+        box-shadow:  15px 15px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.wmb:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.wmb p:nth-child(1) {
+  display: block;
+  font-family: RobotoRegular;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #000000;
+  font-style:italic;
+}
+
+.wmb p {
+  color: #4a5568;
+  margin: 0;
+}
+.wmbLine{
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.336);
+    margin: 30px 0;
+
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+  .whyMedBoxed {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+.about{
+    width: 100%;
+    height: fit-content;
+    padding: 10vh 0;
+
+}
+.aboutPlc{
+    width: 90%;
+    margin:  0 auto;
+}
+.aboutTop{
+    height: fit-content;
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+.atLeft{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.atRight{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+
+}
+.atBoxed{
+    width: 90%;
+    height: fit-content;
+    padding: 5% 0;
+    
+
+}
+.atBoxedCont p span{
+    font-style: italic !important;
+    font-weight: 900;
+}
+.atBoxed ul{
+    font-family: RobotoRegular;
+    margin-left: 40px;
+}
+.atBoxed ul li{
+  margin-bottom: 15px;
+}
+.atBoxed p{
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+.atBoxed p{
+  margin-left: 0px;
+  margin-bottom: 10px;
+}
+
+
+.atLeft h2 span{
+    font-family: RobotoRegular;
+    font-style: italic;
+    font-weight: 100;
+}
+.atLeft img{
+    margin-top: 50px;
+    border-radius: 30px;
+    width: 100% !important;
+}
+.actBoxedLine{
+    width: 50%;
+    margin: 10px 0 20px 0;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.308);
+}
+.aboutBtm{
+    flex-direction: row;
+    height: fit-content;
+display: flex;
+justify-content: space-between;
+gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 10vh;
+
+}
+
+.aboutBtmLeft,.aboutBtmRight{
+    width: 50%;
+        border-radius: 15px;
+
+    height: 350px;
+      box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: start;
+}
+.abCont{
+    width: 100%;
+    height: 100%;
+}
+.abCont p:nth-child(1){
+  font-weight: 900;
+  font-style: italic;
+}
+.abCont p{
+
+}
+
+.abCont ul{
+    margin-left: 30px;
+    font-family: RobotoRegular;
+}
+.abCont ul li{
+    margin-bottom: 10px;
+}
+.contactLeft{
+    width: 40%;
+}
+.contactLeft h2 span{
+    font-family: RobotoRegular;
+    font-weight: 100;
+    font-style: italic;
+}
+.contactLeft p{
+    margin-top: 30px;
+}
+.contactRight{
+width: 60%;
+height: fit-content;
+margin-left: 5%;
+    
+}
+.atLeftIntro img{
+    width: 100%;
+}
+.contactForm{
+    width: 100%;
+    border-radius: 15px;
+        box-shadow:  15px 15px 30px rgba(0, 0, 0, 0.2);
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 0;
+    background: rgb(255, 255, 255);
+}
+.contactBox{
+    width: 90%;
+
+}
+.contactBox button{
+    margin-top: 30px;
+}
+.contactInputBox{
+    height: fit-content;
+    width: 100%;
+
+    margin-bottom: 15px;
+}
+.ciBoxT{
+    width: 100%;
+    margin-bottom: 5px;
+    height: 150px;
+    border-bottom:2px solid rgba(0, 0, 0, 0.199) ;
+
+}
+.ciBox{
+    width: 100%;
+    margin-bottom: 5px;
+    height: 60px;
+    border-bottom:2px solid rgba(0, 0, 0, 0.199) ;
+
+}
+.ciBox input{
+    width: 100%;
+    height: 100%;
+    border: none;
+        font-family: RobotoRegular;
+
+}
+.ciBox input::placeholder{
+
+  font-style: italic;
+}
+.ciBoxT textarea{
+    width: 100%;
+    font-family: RobotoRegular;
+    height: 100%;
+
+    border: none;
+
+}
+textarea:focus,
+input:focus{
+    outline: none;
+}
+.ciBoxT textarea::placeholder{
+  font-style: italic;
+
+}
+.contactInputBox p{
+  font-style: italic;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width:992px ){
+    .aboutBtmLeft,.aboutBtmRight{
+        width: 100%;
+        height: fit-content;
+        margin-top: 30px;
+    }
+    .aboutBtm{
+        margin-bottom: 0;
+    }
+
+    .heroContPlacer{
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding-top: 0;
+    }
+    .heroContPlacer h1{
+      text-align: center;
+    }
+    .welcome{
+        height: fit-content;
+    }
+    .wlcomPlacer{
+        height: fit-content;
+    }
+    .wlcmIntro{
+        height: fit-content;
+        flex-direction: column;
+    }
+    .wlcIntroLeft{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .wlcIntroRight{
+        width: 100%;
+        margin-top: 30px;
+        text-align: center;
+    }
+    .wlcIntroRight p{
+        text-align: center;
+    }
+    .wlcmBoxed{
+        height: fit-content;
+    }
+    .wlcmBoxed{
+        display: flex;
+        flex-direction: column;
+    }
+    .wlcmBox {
+        padding: 30px 0;
+    }
+    .appBox{
+    width: 100%;
+    display: flex;
+    padding: 5% 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin:  0 auto;
+    margin-top: 50px;
+        box-shadow:  15px 15px 30px rgba(0, 0, 0, 0.2);
+
+    height: fit-content;
+    
+}
+.wlmBoxContL{
+    width: 90%;
+}
+.appCont{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.whymedPlc{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    margin:  0 auto;
+    flex-direction: column;
+
+}
+.whyMedLeft{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.whyMedLeft button{
+    display: none;
+}
+.whyMedRight{
+    margin-top: 30px;
+}
+.aboutTop{
+    display: flex;
+    flex-direction: column !important;
+}
+.atLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.atLeftIntro{
+    width: 100%;
+    overflow: hidden;
+}
+.atLeftIntro img{
+    width: 100%;
+}
+.atLeftIntro h2{
+    text-align: center;
+}
+.atRight{
+    width: 100%;
+    margin-top: 30px;
+}
+.aboutBtm{
+    flex-direction: column;
+}
+.contactLeft{
+    width: 100%;
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center; 
+}
+.contactLeft p{
+    margin-top: 15px;
+}
+.contactRight{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 30px;
+}
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+}
+@media only screen and (min-width:1280px){
+.heroContPlacer,.navPlacer,.wlcomPlacer,.heroPagedWrap,.servPlcer,.myapproachPlc,.whymedPlc,.aboutPlc{
+    width: 1200px;
+}
+
+
+}
+@media (min-width:993px) and (max-width:1024px ){
+.whymedPlc{
+    width: 95%;
+}
+}

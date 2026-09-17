@@ -1,0 +1,118 @@
+.floatNav{
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    transition: .3s ease;
+    height: 100vh;
+    right: -100% ;
+    background: aliceblue;
+}
+.floatNavActive{
+        right: 0% !important;
+
+}
+.floatNav p{
+    text-align: center;
+    margin: 10px 0 ;
+    cursor: pointer;
+    padding:  10px ;
+}
+.cancelFon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: RobotoSlim;
+    font-size: 30px;
+    
+    margin:10px auto 0 auto;
+    background: var(--yellow-color);
+    color: black;
+}
+@media only screen and (max-width:992px ){
+  .floatBtn{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    position: fixed;
+    bottom: 20px;
+    z-index: 5;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .floatBtn button{
+        padding: 15px 30px;
+    border:  5px solid var(--yellow-color);
+    color:  black;
+    background: none;
+    border-radius: 10px;
+    background: var(--yellow-color);
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: RobotoBold;
+  }
+h1{
+  font-family: RobotoBold;
+  font-size: 4rem;
+  line-height: 70px;
+}
+h2{
+  font-family: RobotoBold;
+  font-size: 3rem;
+  line-height: 50px;
+}
+h3{
+  font-family: RobotoBold;
+  font-size: 2rem;
+  line-height: 40px;
+}
+a{
+  font-size: 18px;
+}
+p{
+  font-size: 20px !important;
+}
+
+}
+
+@media (min-width:993px) and (max-width:1024px) {
+  h1{
+  font-family: RobotoBold;
+  font-size: 4rem;
+  line-height: 70px;
+}
+h2{
+  font-family: RobotoBold;
+  font-size: 3rem;
+  line-height: 50px;
+}
+h3{
+  font-family: RobotoBold;
+  font-size: 2rem;
+  line-height: 40px;
+}
+a{
+  font-size: 16px;
+}
+p{
+  font-size: 18px !important;
+}
+ul li{
+  font-size: 18px !important;
+}
+ol li{
+  font-size: 18px !important;
+}
+.introWrap h2{
+  margin-bottom: 20px;
+}
+}

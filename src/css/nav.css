@@ -1,0 +1,117 @@
+.floatingNav{
+    width: 100%;
+    height: 10vh !important;
+    position: absolute;
+}
+
+nav{
+    width: 100vw;
+    height: 15vh;
+}
+.navPlacer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    margin:  0 auto;
+}
+.navLink.active a{
+    color: var(--yellow-color);
+}
+.navLogo{
+    width: 30%;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+.navLogo img{
+    width: 400px;
+}
+.navLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    align-items: center;
+}
+.navLink a{
+ margin: 0 10px ;
+ text-decoration: none;
+ color: aliceblue;
+ font-family: RobotoRegular;
+}
+.footerCont{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background:  black;
+    justify-content: center;
+    align-items: center;
+
+}
+.footerCont p{
+    font-size: 15px !important;
+    text-align: center;
+    color: aliceblue;
+}
+
+.fonNavIcon{
+    display: none;
+}
+@media only screen and (max-width:992px ){
+    nav{
+        height: 60px;
+    }
+.navPlacer{
+    width: 95%;
+    height: 100%;
+    justify-content: space-between;
+}
+.navLogo img{
+    width: 250px;
+}
+.navLogo{
+    width: 60%;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.navLinks{
+    display: none;
+}
+.fonNavIcon{
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: black;
+    background: var(--yellow-color);
+}
+}
+@media (min-width:993px) and (max-width:1024px) {
+    .navPlacer{
+        width: 90%;
+    }
+    .navLogo img{
+    width: 250px;
+}
+.navLogo{
+    width: 30%;
+    height: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+.heroContPlacer{
+    width: 90%;
+}
+}

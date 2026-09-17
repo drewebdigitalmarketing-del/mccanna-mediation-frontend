@@ -1,0 +1,306 @@
+.heroPaged{
+    width: 100vw;
+    background: url(../media//orca.avif)no-repeat center/cover;
+    height: 60vh !important;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+.heroPagedDark{
+    height: 100% ;
+}
+.heroPagedWrap{
+    width: 90%;
+    margin:  0 auto;
+    height: 40vh;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    padding-top: 15vh;
+}
+.heroPagedWrap img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+.heroPagedWrap h2{
+    font-family: RobotoRegular;
+    font-style: italic;
+    color: aliceblue;
+}
+.heroPagedWrap h2 span{
+    color: var(--yellow-color);
+}
+.heroPagedWrap .said{
+    font-size: 1.2rem;
+    color: aliceblue;
+    font-style: italic;
+    font-family:  RobotoRegular;
+    margin-top: 7px;
+}
+.heroPagedWrap button{
+    margin-top: 30px;
+}
+.servicesSection{
+    width: 100%;
+    height: 60vh;
+    padding: 10vh 0;
+
+}
+.servPlcer{
+    width: 90%;
+    flex-direction: row;
+    margin:  0 auto;
+    display: flex;
+    height: 100%;
+
+
+}
+.servLeft{
+    width: 40%;
+    height: 100%;
+}
+.servLeft h2:nth-child(1){
+  font-family: RobotoRegular;
+  font-style: italic;
+  font-weight: 100;
+}
+.servLeft button{
+    margin-top: 20px;
+}
+
+
+.servRight{
+  position: relative;
+  overflow-y: hidden;
+  width: 100%;
+}
+.testimonialRight::before{
+  width: 100%;
+  content: 0;
+  width: 100px;
+  height: 10px;
+  bottom: 20px;
+  z-index: 3;
+  position: absolute;
+}
+.tlLeftBtm{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.tlLeftTop h2{
+  color: aliceblue;
+}
+.tlLeftTop h2 span{
+  color: var(--pri-color);
+}
+.testWrapContainer:hover {
+  animation-play-state: paused;
+}
+.testWrapContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+    will-change: transform;
+  backface-visibility: hidden;
+animation: infiniteScroll 10s linear infinite;
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+ .testWrap{
+    width: 85%;
+    text-align: start;
+    padding: 2px 0px;
+    margin-bottom: 20px;
+    height: fit-content;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+
+
+ }
+
+ .textBox1{
+    width: 48%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: start !important;
+    align-items: start !important;
+    border-radius: 20px;
+    background: rgb(255, 255, 255);
+  
+
+ }
+ .textBox2{
+    width: 48%;
+    padding: 50px 0;
+        border-radius: 20px;
+    background: rgb(255, 255, 255);
+        
+
+ }
+ .testimonialUser{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  height: 70px;
+ }
+.tuLogo{
+  width: 60px;
+  height:60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 4px;
+  border-radius: 50%;
+}
+.tuLogo img{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.testUserWords{
+  width: 80%;
+  margin: 0 auto;
+  font-weight: 900;
+  font-family: RobotoRegular;
+  text-align: start;
+  font-style: italic;
+  font-weight: 100;
+  color: rgb(0, 0, 0);
+
+}
+.testUserName {
+  color: aliceblue;
+  
+}
+.tuUserDesc span{
+  color: var(--pri-color);
+  font-family: GroteSlim;
+  font-size: .9rem;
+}
+
+@media only screen and (max-width:992px ){
+    .hero{
+        height: 100vh !important;
+    }
+    .servLeft button{
+    display: none;
+}
+    .heroPagedWrap img{
+        width: 60px;
+    }
+.heroPaged{
+    width: 100vw;
+    background: url(../media//orca.avif)no-repeat center/cover;
+    height: 100vh !important;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+.heroPagedWrap{
+    width: 90%;
+    margin:  0 auto;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+}
+.servicesSection{
+    height: fit-content;
+}
+.servPlcer{
+    display: flex;
+    flex-direction: column;
+}
+.servLeft{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.servRight{
+    width: 100%;
+    height: 80vh;
+    overflow-x: hidden;
+    margin-left: 0;
+    margin-top: 40px;
+}
+.testWrapContainer{
+    width: 100%;
+    align-items: center;
+}
+.testWrap{
+    width: 100%;
+        margin-bottom: 0px;
+
+    flex-direction: column;
+    padding: 0;
+}
+.heroPagedWrap h2{
+    font-family: RobotoRegular;
+    font-style: italic;
+    text-align: center;
+    color: aliceblue;
+    font-size: 2.5rem !important;
+}
+
+ .textBox1{
+    width: 100%;
+    padding: 50px 0;
+        margin-bottom: 15px;
+
+        border-radius: 20px;
+    background: rgb(255, 255, 255); }
+ .textBox2{
+    width: 100%;
+            margin-bottom: 15px;
+
+    padding: 50px 0;
+        border-radius: 20px;
+    background: rgb(255, 255, 255);
+
+ }
+}
+.textBoXLine{
+    width: 80%;
+    margin: 0 auto;
+    height: 1px ;
+    background: rgba(0, 0, 0, 0.363);
+    margin-top: 20px;
+}
+@media (min-width:993px) and (max-width:1024px ){
+    .heroPagedWrap{
+        height: 45vh !important;
+        padding-top: 10%;
+    }
+
+    .heroPaged{
+        height: 65vh !important;
+    }
+    .heroPagedWrap img{
+        width: 70px;
+    }
+    .heroPagedWrap button{
+        margin-top: 35px;
+    }
+
+}
