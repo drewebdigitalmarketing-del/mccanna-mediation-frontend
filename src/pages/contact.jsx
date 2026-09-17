@@ -110,17 +110,7 @@ function Contact(){
   const handleSubmit = async () => {
     if (!validateForm()) return;
     
-    if (!captchaToken) {
-      Swal.fire({
-        title: "Verification Required",
-        text: "Please confirm you're not a robot.",
-        icon: "warning",
-        confirmButtonColor: "#CCF41C",
-        confirmButtonText: "OK"
-      });
-      return;
-    }
-
+   
     const email = emailRef.current.value;
     const party1 = party1Ref.current.value;
     const party2 = party2Ref.current.value;
@@ -128,7 +118,7 @@ function Contact(){
     const conflictType = conflictTypeRef.current.value;
     const additionalInfo = additionalInfoRef.current.value;
 
-    const url = "https://mccannamediationbackend-744x.onrender.com/sendEmail";
+    const url = "https://mccannamediationbackend.onrender.com/sendEmail";
 
     const body = `
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -312,15 +302,7 @@ ${additionalInfo}
                   {errors.additionalInfo && <div className="error-text">{errors.additionalInfo}</div>}
                 </div>
                 
-                <div className="captcha-container">
-                  <ReCAPTCHA
-                    ref={captchaRef}
-                    sitekey="6LcB894sAAAAANqW4M7W_G5SLI9IMH5QS8NIxkoZ"
-                    onChange={onCaptchaChange}
-                    onExpired={onCaptchaExpired}
-                    theme="light"
-                  />
-                </div>
+              
                 
                 <button className="secBtn" onClick={handleSubmit} disabled={loader}>
                   {loader ? <Ping size="30" speed="1" color="#CCF41C" /> : "Submit Message"}
